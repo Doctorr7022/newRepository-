@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+/* Base styles */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to bottom, #462446 40%, #563D7C);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header-content {
+    padding: 0;
+}
+
+header h1 {
+    font-size: 48px; /* Increased font size */
+    font-weight: 900; /* Increased font weight */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px; /* Increased font size */
+}
+
+/* Main content container */
+#sci-fi-content {
+    padding: 0px; /* Increased padding */
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#sci-fi-content h2 {
+    font-size: 36px; /* Increased font size */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Book list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 30px; 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; 
+    background: linear-gradient(to bottom, #fff, #f2f2f2);
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+li:hover:before {
+    opacity: 1;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Increased box shadow on hover */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+li:hover img {
+    transform: scale(1.1);
+}
+
+.book-details {
+    padding: 30px; /* Increased padding */
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    margin: 0;
+    font-size: 28px; /* Decreased font size */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px; /* Decreased margin */
+}
+
+.price {
+    margin-top: 10px; /* Increased margin */
+    font-size: 20px; /* Increased font size */
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 30px; /* Increased padding */
+    background: linear-gradient(to bottom, #462446, #563D7C);
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+}
+
+    </style>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unveil Sci-fi Wonders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Enchanted Book Emporium</h1>
+            <p>Welcome to the world of wonders</p>
+        </div>
+    </header>
+    
+    <section id="sci-fi-content">
+        <h2>Discover the Marvels of Sci-fi</h2>
+       <ul>
+            <li>
+                <img src="img/022824_Neuromancer_Inline_Image_01_inline_image_post.jpg.slideshow_large.jpg" alt="Neuromancer">
+                <div class="book-details">
+                    <h3>Neuromancer</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81FZWvVjppL._SL1500_.jpg" alt="Journey to the Stars">
+                <div class="book-details">
+                    <h3>Journey to the Stars</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61Wb2sa60hL._SL1500_.jpg" alt="Echoes of Tomorrow">
+                <div class="book-details">
+                    <h3>Echoes of Tomorrow</h3>
+                    <p class="price">$24.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/A1R2ZP0TZdL._SL1500_.jpg" alt="Cosmic Chronicles">
+                <div class="book-details">
+                    <h3>Cosmic Chronicles</h3>
+                    <p class="price">$29.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81uls4mTOSL._SL1500_.jpg" alt="Galactic Odyssey">
+                <div class="book-details">
+                    <h3>Galactic Odyssey</h3>
+                    <p class="price">$34.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81MN311jbUL._SL1500_.jpg" alt="Beyond Infinity">
+                <div class="book-details">
+                    <h3>Beyond Infinity</h3>
+                    <p class="price">$39.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71GAHk1fzvL._SL1360_.jpg" alt="Starlight Symphony">
+                <div class="book-details">
+                    <h3>Starlight Symphony</h3>
+                    <p class="price">$29.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71f9IQaMpBL._SL1413_.jpg" alt="Celestial Dreams">
+                <div class="book-details">
+                    <h3>Celestial Dreams</h3>
+                    <p class="price">$44.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/718Pinqy+ML._SL1500_.jpg" alt="Nebula Nexus">
+                <div class="book-details">
+                    <h3>Nebula Nexus</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/91s571WxfJL._SL1500_.jpg" alt="Cosmic Odyssey">
+                <div class="book-details">
+                    <h3>Cosmic Odyssey</h3>
+                    <p class="price">$54.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71GqJZBXqSL._SL1500_.jpg" alt="Stellar Voyage">
+                <div class="book-details">
+                    <h3>Stellar Voyage</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/51Q7VDYAQZL.jpg" alt="Astronomical Adventures">
+                <div class="book-details">
+                    <h3>Astronomical Adventures</h3>
+                    <p class="price">$39.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/41LNC9j83FL.jpg" alt="Interstellar Encounters">
+                <div class="book-details">
+                    <h3>Interstellar Encounters</h3>
+                    <p class="price">$44.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71v0Uz2n2GL._SL1500_.jpg" alt="Space Odyssey">
+                <div class="book-details">
+                    <h3>Space Odyssey</h3>
+                    <p class="price">$29.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71P7VPfO6OL._SL1360_.jpg" alt="Galactic Chronicles">
+                <div class="book-details">
+                    <h3>Galactic Chronicles</h3>
+                    <p class="price">$34.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61VAooh-GjL._SL1000_.jpg" alt="Cosmic Journey">
+                <div class="book-details">
+                    <h3>Cosmic Journey</h3>
+                    <p class="price">$59.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61ql2Q7s14L.jpg" alt="Orbital Odyssey">
+                <div class="book-details">
+                    <h3>Orbital Odyssey</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61hrkww3GbL._SL1499_.jpg" alt="Celestial Symphony">
+                <div class="book-details">
+                    <h3>Celestial Symphony</h3>
+                    <p class="price">$54.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71XbsUQs0GL._SL1200_.jpg" alt="Aurora Borealis">
+                <div class="book-details">
+                    <h3>Aurora Borealis</h3>
+                    <p class="price">$39.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81CNRxogwvL._SL1280_.jpg" alt="Galactic Dreams">
+                <div class="book-details">
+                    <h3>Galactic Dreams</h3>
+                    <p class="price">$44.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61UdRyEjuyL._SL1500_.jpg" alt="Cosmic Harmony">
+                <div class="book-details">
+                    <h3>Cosmic Harmony</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/512oOG37PDL.jpg" alt="Nebula Nocturne">
+                <div class="book-details">
+                    <h3>Nebula Nocturne</h3>
+                    <p class="price">$59.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71Maa-U+lmL._SL1500_.jpg" alt="Stardust Serenade">
+                <div class="book-details">
+                    <h3>Stardust Serenade</h3>
+                    <p class="price">$34.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81SG9OsUWyL._SL1500_.jpg" alt="Galactic Explorer">
+                <div class="book-details">
+                    <h3>Galactic Explorer</h3>
+                    <p class="price">$44.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71Wsld18qEL._SL1500_.jpg" alt="Cosmic Chronicles II">
+                <div class="book-details">
+                    <h3>Cosmic Chronicles II</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71lOwrFr6aL._SL1499_.jpg" alt="Starlight Sonata">
+                <div class="book-details">
+                    <h3>Starlight Sonata</h3>
+                    <p class="price">$54.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71ARIsovobL._SL1499_.jpg" alt="Nebula Nights">
+                <div class="book-details">
+                    <h3>Nebula Nights</h3>
+                    <p class="price">$39.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61vWYcIY+iL._SL1294_.jpg" alt="Cosmic Reverie">
+                <div class="book-details">
+                    <h3>Cosmic Reverie</h3>
+                    <p class="price">$44.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71FsybRYztL._SL1360_.jpg" alt="Galactic Odyssey II">
+                <div class="book-details">
+                    <h3>Galactic Odyssey II</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/513uYXRJdvL.jpg" alt="Astronomical Wonders">
+                <div class="book-details">
+                    <h3>Astronomical Wonders</h3>
+                    <p class="price">$59.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71b4X21Tg9L._SL1500_.jpg" alt="Stellar Symphony">
+                <div class="book-details">
+                    <h3>Stellar Symphony</h3>
+                    <p class="price">$64.99</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Enchanted Book Emporium</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sciFiContent = document.getElementById("sci-fi-content");
+
+           
+
+        });
+    </script>
+</body>
+</html>

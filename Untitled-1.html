@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f6f6f6, #e9ecef); /* Soft gradient for a lighter background */
+}
+
+header, footer {
+    background: linear-gradient(to bottom, #343a40, #212529); /* Darker gradient for header and footer */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff; /* Dark grey for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    animation: textGlow 5s infinite alternate;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #6c757d; /* Grey for links */
+    transition: all 0.5s ease;
+    padding: 30px 60px;
+    border-radius: 60px;
+    background: linear-gradient(to right, #ffd700, #ffa500, #ff8c00); /* Orange gradient */
+    background-size: 300% 100%;
+    display: inline-block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: gradientShift 7s infinite alternate, textShadow 3s infinite alternate;
+    transform-origin: center;
+}
+
+a:hover {
+    color: #ffffff;
+    background-position: right center;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+}
+
+@keyframes textShadow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        text-shadow: 0 0 20px #343a40, 0 0 30px #343a40, 0 0 40px #343a40, 0 0 50px #343a40, 0 0 60px #343a40, 0 0 70px #343a40, 0 0 80px #343a40, 0 0 90px #343a40;
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+</style>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Categories</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to our Enchanted Book Emporium</h1>
+        </header>
+        
+        <section id="categories">
+            <h2>Discover Magical Realms</h2>
+            <ul>
+                <li><a href="sci-fi.html" id="sci-fi" target="_blank">Unveil Sci-fi Wonders</a></li>
+                <li><a href="drama.html" id="drama" target="_blank">Dive into Dramatic Epics</a></li>
+                <li><a href="#" id="adventure">Embark on Thrilling Adventures</a></li>
+                <li><a href="#" id="romanticism">Feel the Allure of Romanticism</a></li>
+                <li><a href="#" id="mystery">Unravel Mysterious Enigmas</a></li>
+                <li><a href="#" id="horror">Confront Your Deepest Fears</a></li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Enchanted Book Emporium</p>
+        </footer>
+        
+        <script src="script.js"></script>
+       
+    </body>
+</html>

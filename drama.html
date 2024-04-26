@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* Base styles */
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(to bottom, #462446 40%, #563D7C);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .header-content {
+            padding: 0;
+        }
+        
+        header h1 {
+            font-size: 48px; /* Increased font size */
+            font-weight: 900; /* Increased font weight */
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 20px; /* Increased font size */
+        }
+        
+        /* Main content container */
+        #dramatic-epics-content {
+            padding: 0px; /* Increased padding */
+            margin-top: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        #dramatic-epics-content h2 {
+            font-size: 36px; /* Increased font size */
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Book list styles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        li {
+            margin: 30px; 
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 300px; 
+            background: linear-gradient(to bottom, #fff, #f2f2f2);
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        
+        li:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        li:hover:before {
+            opacity: 1;
+        }
+        
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Increased box shadow on hover */
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        li:hover img {
+            transform: scale(1.1);
+        }
+        
+        .book-details {
+            padding: 30px; /* Increased padding */
+            background-color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+        
+        h3 {
+            margin: 0;
+            font-size: 28px; /* Decreased font size */
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px; /* Decreased margin */
+        }
+        
+        .price {
+            margin-top: 10px; /* Increased margin */
+            font-size: 20px; /* Increased font size */
+            color: #777;
+        }
+        
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 30px; /* Increased padding */
+            background: linear-gradient(to bottom, #462446, #563D7C);
+            color: #fff;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 100%;
+        }
+        
+            </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dramatic Epics Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Enchanted Book Emporium</h1>
+            <p>Welcome to the world of dramatic epics</p>
+        </div>
+    </header>
+    
+    <section id="dramatic-epics-content">
+        <h2>Explore the World of Dramatic Epics</h2>
+        <ul>
+            <li>
+                <img src="img/51RcuPqc+lL._SL1200_.jpg" alt="The Count of Monte Cristo">
+                <div class="book-details">
+                    <h3>The Count of Monte Cristo</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/61j5Du0EzAL._SL1200_.jpg" alt="Les Misérables">
+                <div class="book-details">
+                    <h3>Les Misérables</h3>
+                    <p class="price">$24.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71wXZB-VtBL._SL1200_.jpg" alt="War and Peace">
+                <div class="book-details">
+                    <h3>War and Peace</h3>
+                    <p class="price">$29.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/718gkx8l6pL._SL1500_.jpg" alt="Gone with the Wind">
+                <div class="book-details">
+                    <h3>Gone with the Wind</h3>
+                    <p class="price">$34.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81g0AATkO9L._SL1500_.jpg" alt="The Odyssey">
+                <div class="book-details">
+                    <h3>The Odyssey</h3>
+                    <p class="price">$39.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71FVVdj9w4L._SL1500_.jpg" alt="The Iliad">
+                <div class="book-details">
+                    <h3>The Iliad</h3>
+                    <p class="price">$44.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/71OZJsgZzQL._SL1500_.jpg" alt="The Brothers Karamazov">
+                <div class="book-details">
+                    <h3>The Brothers Karamazov</h3>
+                    <p class="price">$49.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/91F9WNEThJL._SL1500_.jpg" alt="Anna Karenina">
+                <div class="book-details">
+                    <h3>Anna Karenina</h3>
+                    <p class="price">$54.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81EcXiV-9WL._SL1500_.jpg" alt="Crime and Punishment">
+                <div class="book-details">
+                    <h3>Crime and Punishment</h3>
+                    <p class="price">$59.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/81kIVgGfc+L._SL1500_.jpg" alt="Don Quixote">
+                <div class="book-details">
+                    <h3>Don Quixote</h3>
+                    <p class="price">$64.99</p>
+                </div>
+            </li>
+            <!-- Add more books with real pictures -->
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Enchanted Book Emporium</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
